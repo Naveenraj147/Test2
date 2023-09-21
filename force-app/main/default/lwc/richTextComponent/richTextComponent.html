@@ -1,0 +1,12 @@
+<template>
+    <lightning-card variant="Narrow">
+        <div class="slds-m-around_medium"></div>
+        <lightning-button variant="standard" label="Button 1" name="Button 1" onclick={handleClick}></lightning-button>&nbsp;
+        <lightning-button variant="standard" label="Button 2" name="Button 2" onclick={handleClick}></lightning-button>&nbsp;
+
+        <lightning-input read-only="" type="text" variant="standard" name="name" label="Subject" value={myVal}></lightning-input>
+        &nbsp;
+        <lightning-input-rich-text label="Body" readonly="" value={myVal} onchange={handleChange} formats={formats}></lightning-input-rich-text>
+    </lightning-card>
+
+</template>
